@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet"> 
+
+<head>
+	<title>JS Navigation Toggle Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#myDIV {
+    width: 100%;
+    padding: 50px 0;
+    text-align: center;
+    background-color: lightblue;
+    margin-top: 20px;
+}
+
+button {
+	border-radius: 12px;
+	background-color: white;
+	color: black;
+	font-size: 20px;
+	border: #8B008B;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+	backround-color: white;
+	color: black;
+	border: 2px solid #8B008B;
+}
+.button1:hover {
+	background-color: #8B008B;
+	color: white;
+}
+
+body {
+	font-family: 'Noto Sans SC', sans-serif;
+}
+</style>
+</head>
+<body>
+
+<p>Click the "Try it" button to toggle between hiding and showing the DIV element:</p>
+
+<button onclick="myFunction()" class="button button1">Try it</button>
+
+<div id="myDIV">
+This is my DIV element.
+</div>
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
+</script>
+
+
+
+</body>
+</html>
